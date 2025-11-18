@@ -1,0 +1,43 @@
+/* :root { */
+  /* --primary: #007BFF;   Primary Brand Color (Blue) – for main buttons, links, highlights */
+  /* --secondary: #003366; Secondary Color (Dark Blue) – for headers, footers, or hover effects */
+  /* --background: #FFFFFF; Background Color – clean white for the main page background */
+  /* --text: #222222;      Text Color – dark gray for high readability on light background */
+  /* --accent: #FFA500;    Accent Color (Orange) – for call-to-action buttons or highlights */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+a.active hr{
+  display: block;
+}
+
+
+*{
+  font-family: Outfit;
+  
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-scrollbar{
+ display: none; 
+}
+
+@media(max-width:640px){
+
+  a.active{
+    background-color: black;
+    color: white;
+  }
+
+}
